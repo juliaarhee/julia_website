@@ -1,0 +1,43 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%
+}
+
+.container {
+    display: flex;
+}
+
+#Left-menu {
+    width: 20%;
+    background-color: aqua;
+    position: fixed;
+    height: 100%;
+    padding: 1rem;
+}
+
+#Name {
+    height: 20%;
+}
+
+#Stickies-holder {
+    height: 60%
+}
+
+#Asterisks {
+    height: 20%
+}
+
+.bigBody {
+    margin-left: 20%;
+    width: 80%;
+    padding: 1rem;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.bigBody section {
+    margin: 2rem 0;
+    padding: 2rem;
+    border-bottom: 1px solid #ccc;
+}
