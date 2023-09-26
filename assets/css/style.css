@@ -6,15 +6,14 @@ body, html {
     height: 100%;
     width: 100%;
     justify-content: center;
-    align-items: flex-end;
-    font-family: 'Courier New', Courier, monospace;    
+    font-family: monospace;    
 }
 
 #top {
     position: absolute;
     top: 0;
-    height: 20px;
-    width: 20px;
+    height: 0px;
+    width: 0px;
 }
 .container {
     width: 100vw;
@@ -28,7 +27,6 @@ body, html {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     min-height: 100vh;
     overflow-y: hidden;
 }
@@ -47,28 +45,30 @@ body, html {
     border-bottom: dashed; 
     border-width: 1px;  
     padding-bottom: 5vh; 
+    padding-bottom: 11.45vh;
 }
 
 #other {
-    padding-top: 5vh;
+    padding-top: 11.45vh;
 }
 
 .header {
     font-weight: bold;
     word-spacing: 24px;
+    font-size: 1.2rem;
 }
 
 .text  {
     margin-left: 40px;
+    font-size: 1.2rem;
 }
 
 #Name {
-    font-size: 3rem;
+    font-size: 3.4rem;
     font-weight: bold;
-    letter-spacing: .5em;
+    letter-spacing: .6em;
     text-align: right;
     padding-bottom: 2px;
-
 }
 
 #topBuff {
@@ -77,10 +77,10 @@ body, html {
 }
 
 #date {
-    height: 20%;
     display: flex;
     position: relative;
     align-items: center;
+    background-color: darksalmon;
 }
 
 .Stickies-holder {
@@ -94,7 +94,8 @@ body, html {
 
 .Stickies {
     position: absolute;
-    height: 168px;
+    height: 188px;
+    width: 188px;
 }
 
 .Sticky-image {
@@ -103,7 +104,7 @@ body, html {
 }
 
 #Sticky1 {
-    right: 96px;
+    right: 76px;
     top:30px;
 }
 
@@ -136,9 +137,10 @@ body, html {
 
 .menu ul li {
     margin: 5px 0;
-    font-size: 12px;
+    font-size: 1rem;
     color:black;
 }
+
 
 #footerContainer {
     position: relative;
@@ -148,8 +150,8 @@ body, html {
 
 .rectangle  {
     position: absolute;
-    width: 15rem;
     right: 20px;
+    width: 18rem;
 }
 
 #tag {
@@ -167,8 +169,17 @@ body, html {
 
 .bullets   {
     padding-left: 56px;
-    line-height: 40px;
+    font-size: 1.2rem;
+}
+
+.bullets li {
+    margin-bottom: 20px;
 }
 ::-webkit-scrollbar{
     background-color: transparent;
 }
+
+.bold-link {
+    font-weight: bold;
+}
+
