@@ -141,7 +141,12 @@ body, html {
     color:black;
 }
 
-
+a:link {
+    color: black;
+}
+a :visited {
+    color: black;
+}
 #footerContainer {
     position: relative;
     height: 0%;
