@@ -59,7 +59,7 @@ body, html {
 }
 
 .text  {
-    margin-left: 40px;
+    margin-left: 3vw;
     font-size: 1.2rem;
 }
 
@@ -188,3 +188,6 @@ a :visited {
     font-weight: bold;
 }
 
+#boof a {
+    text-decoration: none;
+}
