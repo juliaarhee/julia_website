@@ -7,6 +7,8 @@ body, html {
     width: 100%;
     justify-content: center;
     font-family: monospace;
+    background-color: #fbfcfa;
+
 }
 
 #top {
@@ -20,6 +22,7 @@ body, html {
     height: 100vh;
     display: flex;
     background-color: #fbfcfa;
+    max-width: 1400px;
 }
 
 .menus{
@@ -75,6 +78,7 @@ body, html {
     text-align: right;
     padding-bottom: 2px;
     min-height: 7rem;
+    max-width: 500px;
 }
 
 #topBuff {
@@ -244,6 +248,7 @@ a :visited {
         padding-left: 8%;
         padding-right: 8%;
         background-color: #fbfcfa;
+        line-height: 1.4;
         
     }
 
