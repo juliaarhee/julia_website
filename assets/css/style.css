@@ -269,3 +269,67 @@ a :visited {
         padding-right: 6%;
     }
 }
+
+@media screen and (max-width: 480) {
+    .Left-menu { display: none; }
+    .menu-small { display: contents; }
+
+    .large-font {
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: .2em;
+    }
+
+    .button-style {
+        font-size: 1rem; /* Smaller font size */
+        font-weight: normal;
+        margin-left: 10px; /* Space between buttons */
+        text-decoration: none; /* Remove underline from links */
+        /* Add more styling for your buttons, such as padding, background color, etc. */
+        pointer-events: auto;
+    }
+
+    .menus {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+        pointer-events:none;       
+    }
+    .menu-small{
+        position: fixed;
+        top: 0;
+    }
+
+    .menuletters {
+        width: 100%;
+        height: 12%;
+        padding-left: 8%;
+        padding-right: 8%;
+        background-color: #fbfcfa;
+        line-height: 1.4;
+        
+    }
+
+    .menuletters a{
+        background-color: palegoldenrod;
+        padding: 0.2em;
+        margin: 0;
+        border-radius: 0.2em;
+        box-decoration-break: clone; /* This ensures the background goes line-by-line */
+    }
+
+    .bigBody {
+        z-index: 1;
+        width: 100%;
+        height: 97%;
+        margin-top: 2rem;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+}
