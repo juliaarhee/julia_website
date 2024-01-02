@@ -254,9 +254,9 @@ a :visited {
 
     .menuletters a{
         background-color: palegoldenrod;
-        padding: 0.2em;
+        padding: 0.1em;
         margin: 0;
-        border-radius: 0.2em;
+        border-radius: 0.em;
         box-decoration-break: clone; /* This ensures the background goes line-by-line */
     }
 
