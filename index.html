@@ -144,16 +144,16 @@
                 <p class="text">  </p>
                 <ul class="bullets">
                     <li> This summer, I WOOFed at a beautiful family fruit farm in the Malibu mountains. Check them out <a href="https://wwoofusa.org/en/host/23098-vineyard-orchard" target="_blank" rel="noopener noreferrer"> here</a>!</li>
-                    <li> I was an extra in a <a href="https://www.rottentomatoes.com/m/senior_year" target="_blank" rel="noopener noreferrer"> movie</a>  that has a 27% rating on rotten tomatoes. It was definitely the most unique work experience I've had to date.</li>
+                    <li> I was an extra in a <a href="https://www.rottentomatoes.com/m/senior_year" target="_blank" rel="noopener noreferrer"> Netflix romcom</a>  that was (at one point) the #1 movie on Netflix. It was definitely the most unique work experience I've had to date.</li>
                 </ul>
             </section>
         </main>
     </div>
     <script>
-    // Define a flag to determine if the user clicked a link
+    // user clicked a link
         let userClicked = false;
         
-        // Function to check if an element is in the viewport
+        // is element is in the viewport
         function isSectionInView(element) {
             const rect = element.getBoundingClientRect();
             const bigBodyRect = document.querySelector('.bigBody').getBoundingClientRect();
@@ -164,9 +164,8 @@
             );
         }
         
-        // Function to handle scrolling
         function handleBigBodyScroll() {
-    // If the scroll was triggered by a link click, don't change the bold links
+    // if scroll bc of click, dont change bold
     if (userClicked) return;
 
     const sections = document.querySelectorAll('.bigBody section');
@@ -192,7 +191,7 @@
         }
     });
 }
-        
+
         document.querySelector('.bigBody').addEventListener('scroll', handleBigBodyScroll);
         
         document.body.querySelector('.Left-menu').addEventListener('wheel', function(e) {
@@ -227,15 +226,14 @@
                     const onScrollEnd = debounce(() => {
                 userClicked = false;
                 document.querySelector('.bigBody').removeEventListener('scroll', onScrollEnd);
-            }, 100);  // 100 milliseconds for debounce
+            }, 100);  // play w miliseconds to get load correctly
 
             document.querySelector('.bigBody').addEventListener('scroll', onScrollEnd);    
                 }
             });
         });
         
-        // On load
-        
+        // run each time it loads
         window.addEventListener('load', () => {
            const flexContainer = document.querySelector('.menus');
            const viewportHeight = window.innerHeight;
@@ -244,7 +242,7 @@
             flexContainer.style.height = `${viewportHeight}px`;
             document.querySelector('.bigBody').style.paddingTop = `${paddingTopHeight}px`;
         
-            // Set initial states
+            //initialize 
             handleBigBodyScroll();
 
         });</script> 
